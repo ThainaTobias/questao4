@@ -1,9 +1,16 @@
-import "./Button.css"
-function Button({button}) {
+
+function Button({link, nome}) {
 
     return(
 
-      <button className="botao">{button}</button>
+      <div className="principal">
+        <div className="link">
+          <img className="foto" src={link} alt={nome} />
+        </div>
+        <div className="nome">
+          <p>{nome}</p>
+        </div>
+      </div>
         
     );
 }
